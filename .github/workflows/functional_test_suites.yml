@@ -42,5 +42,8 @@ jobs:
           node-version: 16
       - name: Install Percy
         run: npm install @percy/cli
+         
       - name: Build with Maven
+        env: 
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
         run: npx percy exec -- mvn clean test -P bstack-parallel
