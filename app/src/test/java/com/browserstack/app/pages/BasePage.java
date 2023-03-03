@@ -9,7 +9,7 @@ import io.percy.appium.AppPercy;
 public class BasePage {
     protected AppiumDriver<?> driver;
     protected MobileHelper mobileHelper;
-    protected static AppPercy percy;
+    protected  AppPercy percy;
     public BasePage(AppiumDriver<?> driver) {
         this.driver = driver;
         percy = new AppPercy(driver);

@@ -4,14 +4,15 @@ import com.browserstack.test.suites.TestBase;
 import io.appium.java_client.MobileBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import io.percy.appium.AppPercy;
 
 public class LoginTest extends TestBase {
-
+    protected AppPercy percy;
     @Test
     public void loginLockedUser() {
         driver.findElement(MobileBy.AccessibilityId("menu")).click();
         driver.findElement(MobileBy.AccessibilityId("nav-signin")).click();
-
+        percy.screenshot("Login Screen");
         driver.findElement(MobileBy.AccessibilityId("username-input")).click();
         mobileHelper.selectFromPickerWheel("//XCUIElementTypePickerWheel[@value='Accepted usernames are']", "locked_user");
 

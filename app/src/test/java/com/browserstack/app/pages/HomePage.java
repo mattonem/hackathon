@@ -28,14 +28,12 @@ public class HomePage extends BasePage {
     }
 
     public LoginPage navigateToSignIn() {
-        percy.screenshot("Home page");
         menuLink.click();
         signInLink.click();
         return new LoginPage(driver);
     }
 
     public HomePage addProductToCart(String productId) {
-        percy.screenshot("Home Page");
         mobileHelper.scrollToElement("add-to-cart-" + productId);
         driver.findElement(MobileBy.AccessibilityId("add-to-cart-" + productId)).click();
         return this;
