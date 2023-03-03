@@ -37,9 +37,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
           cache: 'maven'
-      - name: Percy Test
-        uses: percy/exec-action@v0.3.1
+      - uses: actions/setup-node@v3
         with:
-          command: "mvn clean test -P bstack-parallel"
-        env:
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          node-version: 16
+      - name: Install Percy
+        run: npm install @percy/cli
+      - name: Build with Maven
+        run: npx percy exec -- mvn clean test -P bstack-parallel
