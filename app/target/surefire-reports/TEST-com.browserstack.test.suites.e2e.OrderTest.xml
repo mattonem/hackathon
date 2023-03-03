@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.browserstack.test.suites.e2e.OrderTest" time="2.39" tests="3" errors="0" skipped="2" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="18.0.1+0"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shaikhalid/Documents/BrowserStack/code/hackathon/app"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shaikhalid/Documents/BrowserStack/code/hackathon/app"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="18.0.1+0"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/gj/47khjtps27d9h0lx37msfkpc0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.8.5/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shaikhalid/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.8.5/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="62.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="13.2"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.8.5/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shaikhalid"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="user.name" value="shaikhalid"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.5/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -P bstack-single"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="18.0.1"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.8.5/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="setUp" classname="com.browserstack.test.suites.e2e.OrderTest" time="2.279">
+    <failure message="Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: Authorization required&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Khalids-MBP&apos;, ip: &apos;192.168.8.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: Authorization required
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Khalids-MBP', ip: '192.168.8.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '18.0.1'
+Driver info: driver.version: AppiumDriver
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: Authorization required
+Caused by: org.openqa.selenium.json.JsonException: 
+Unable to determine type from: A. Last 1 characters read: A
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Khalids-MBP', ip: '192.168.8.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '18.0.1'
+Driver info: driver.version: AppiumDriver
+</failure>
+  </testcase>
+  <testcase name="placeOrder" classname="com.browserstack.test.suites.e2e.OrderTest" time="0">
+    <skipped message="Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: Authorization required&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Khalids-MBP&apos;, ip: &apos;192.168.8.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: driver.version: AppiumDriver"/>
+  </testcase>
+  <testcase name="tearDown" classname="com.browserstack.test.suites.e2e.OrderTest" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

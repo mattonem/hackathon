@@ -34,6 +34,7 @@ public class HomePage extends BasePage {
     }
 
     public HomePage addProductToCart(String productId) {
+        percy.screenshot("Home Page");
         mobileHelper.scrollToElement("add-to-cart-" + productId);
         driver.findElement(MobileBy.AccessibilityId("add-to-cart-" + productId)).click();
         return this;

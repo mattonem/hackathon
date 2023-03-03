@@ -28,6 +28,7 @@ public class LoginPage extends BasePage {
 
         passwordInput.click();
         mobileHelper.selectFromPickerWheel("//XCUIElementTypePickerWheel[@value='Password for all users']", password);
+        percy.screenshot("Login Screen");
         logInButton.click();
         return new HomePage(driver);
     }

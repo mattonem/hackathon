@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.browserstack.test.suites.e2e.OrderTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 2.39 sec <<< FAILURE! - in com.browserstack.test.suites.e2e.OrderTest
+setUp(com.browserstack.test.suites.e2e.OrderTest)  Time elapsed: 2.279 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: Authorization required
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Khalids-MBP', ip: '192.168.8.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '18.0.1'
+Driver info: driver.version: AppiumDriver
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: Authorization required
+Caused by: org.openqa.selenium.json.JsonException: 
+Unable to determine type from: A. Last 1 characters read: A
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Khalids-MBP', ip: '192.168.8.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '18.0.1'
+Driver info: driver.version: AppiumDriver
+

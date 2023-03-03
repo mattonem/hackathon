@@ -16,6 +16,7 @@ public class OrdersPage extends BasePage {
     }
 
     public int getItemsFromOrder() {
+        percy.screenshot("Orders Page");
         return orderItems.size();
     }
 }
