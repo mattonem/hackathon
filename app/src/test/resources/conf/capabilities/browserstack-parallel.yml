@@ -31,6 +31,7 @@ app: ./apps/browserstack-demoapp.apk
 # Platforms object contains all the browser / device combinations you want to test on.
 # Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)
 
+
 platforms:
   - deviceName: Samsung Galaxy S22 Ultra
     osVersion: 12.0
