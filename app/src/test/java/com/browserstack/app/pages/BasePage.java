@@ -14,6 +14,6 @@ public class BasePage {
         this.driver = driver;
         percy = new AppPercy(driver);
         this.mobileHelper = new MobileHelper(driver);
-        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+        PageFactory.initElements(driver, this);
     }
 }
