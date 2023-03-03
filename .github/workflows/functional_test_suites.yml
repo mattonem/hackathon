@@ -47,7 +47,7 @@ jobs:
       - name: Build with Maven
         env: 
           PERCY_TOKEN: ${{ secrets.WEB_PERCY_TOKEN }}
-          BROWSERSTACK_CONFIG_FILE: "src/test/resources/conf/capabilities/browserstack-parallel.yml"
+          BROWSERSTACK_CONFIG_FILE: src/test/resources/conf/capabilities/browserstack-parallel.yml
         run: npx percy exec -- mvn clean test -P bstack-parallel
   functional_app_test_suite:
     # The type of runner that the job will run on
@@ -80,5 +80,5 @@ jobs:
       - name: Build with Maven
         env: 
           PERCY_TOKEN: ${{ secrets.APP_PERCY_TOKEN }}
-          BROWSERSTACK_CONFIG_FILE: "src/test/resources/conf/capabilities/browserstack-parallel.yml"
+          BROWSERSTACK_CONFIG_FILE: src/test/resources/conf/capabilities/browserstack-parallel.yml
         run: npx percy app:exec -- mvn clean test -P bstack-parallel
