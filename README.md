@@ -36,3 +36,7 @@ export PERCY_TOKEN=<your_percy_project_token>
 ```bash
 mvn test -P bstack-parallel
 ```
+
+## Github Action
+
+Github action have been setup in such a way that for every push on the main branch, 2 jobs are triggered -- one for web, one for native app testing. 
