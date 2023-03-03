@@ -78,5 +78,5 @@ jobs:
          
       - name: Build with Maven
         env: 
-          PERCY_TOKEN: ${{ secrets.WEB_PERCY_TOKEN }}
+          PERCY_TOKEN: ${{ secrets.APP_PERCY_TOKEN }}
         run: npx percy exec -- mvn clean test -P bstack-parallel
