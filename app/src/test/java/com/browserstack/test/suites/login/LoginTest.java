@@ -12,6 +12,7 @@ public class LoginTest extends TestBase {
     public void loginLockedUser() {
         driver.findElement(MobileBy.AccessibilityId("menu")).click();
         driver.findElement(MobileBy.AccessibilityId("nav-signin")).click();
+        percy = new AppPercy(driver);
         percy.screenshot("Login Screen");
         driver.findElement(MobileBy.AccessibilityId("username-input")).click();
         mobileHelper.selectFromPickerWheel("//XCUIElementTypePickerWheel[@value='Accepted usernames are']", "locked_user");
