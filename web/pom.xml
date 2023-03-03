@@ -300,6 +300,11 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>src/test/resources/conf/runners/testng.xml</suiteXmlFile>
                             </suiteXmlFiles>
+                            <includes>
+                                <include>
+                                    com.browserstack.test.suites.login.LoginVisualTest
+                                </include>
+                            </includes>
                         </configuration>
                     </plugin>
                 </plugins>
