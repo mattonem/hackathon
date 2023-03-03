@@ -28,6 +28,7 @@ public class HomePage extends BasePage {
     }
 
     public LoginPage navigateToSignIn() {
+        percy.screenshot("Home page");
         menuLink.click();
         signInLink.click();
         return new LoginPage(driver);
